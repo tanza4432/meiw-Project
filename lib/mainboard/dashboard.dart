@@ -4,6 +4,7 @@ import 'package:hospitel/mainboard/screen/home_screen.dart';
 import 'package:hospitel/mainboard/screen/location.dart';
 import 'package:hospitel/mainboard/screen/patient_Information.dart';
 import 'package:hospitel/mainboard/screen/patient_notification.dart';
+import 'package:hospitel/mainboard/screen/profile.dart';
 
 class dashboardScreen extends StatefulWidget {
   dashboardScreen(this.type);
@@ -20,11 +21,13 @@ class _dashboardScreenState extends State<dashboardScreen> {
     Location(),
     patient_Information(),
     patient_notification(),
+    ProfilePage(),
   ];
 
   final List _screensUsers = [
     HomeScreen(),
     Location(),
+    ProfilePage(),
   ];
   int _currentIndex = 0;
 
@@ -43,7 +46,13 @@ class _dashboardScreenState extends State<dashboardScreen> {
               selectedItemColor: Colors.white,
               unselectedItemColor: Colors.grey,
               elevation: 0.0,
-              items: [Icons.home, Icons.map, Icons.event_note, Icons.info]
+              items: [
+                Icons.home,
+                Icons.map,
+                Icons.event_note,
+                Icons.info,
+                Icons.account_box
+              ]
                   .asMap()
                   .map((key, value) => MapEntry(
                         key,
@@ -80,7 +89,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
               selectedItemColor: Colors.white,
               unselectedItemColor: Colors.grey,
               elevation: 0.0,
-              items: [Icons.home, Icons.map]
+              items: [Icons.home, Icons.map, Icons.account_box]
                   .asMap()
                   .map((key, value) => MapEntry(
                         key,
