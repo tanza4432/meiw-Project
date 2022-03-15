@@ -3,9 +3,7 @@ import 'package:hospitel/Theme/theme.dart';
 import 'package:hospitel/component/ThemeHelper.dart';
 
 class patient extends StatelessWidget {
-  const patient({
-    Key? key,
-  }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {

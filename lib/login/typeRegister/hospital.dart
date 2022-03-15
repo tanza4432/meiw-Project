@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hospitel/component/ThemeHelper.dart';
 
 class hospital extends StatelessWidget {
-  const hospital({
-    Key? key,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

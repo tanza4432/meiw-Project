@@ -14,6 +14,10 @@ class login extends StatefulWidget {
 }
 
 class _loginState extends State<login> {
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
+  String type;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -45,7 +49,7 @@ class _loginState extends State<login> {
                 margin: EdgeInsets.symmetric(horizontal: 40),
                 child: Form(
                   child: TextFormField(
-                    // controller: username,
+                    controller: email,
                     style: TextStyle(color: Colors.black),
                     decoration: ThemeHelper().textInputDecoration("อีเมล์"),
                   ),
@@ -57,7 +61,8 @@ class _loginState extends State<login> {
                 margin: EdgeInsets.symmetric(horizontal: 40),
                 child: Form(
                   child: TextFormField(
-                    // controller: username,
+                    obscureText: true,
+                    controller: password,
                     style: TextStyle(color: Colors.black),
                     decoration: ThemeHelper().textInputDecoration("รหัสผ่าน"),
                   ),
@@ -123,10 +128,18 @@ class _loginState extends State<login> {
                 padding: const EdgeInsets.all(20),
                 child: FlatButton(
                   onPressed: () {
-                    Navigator.of(context).pushAndRemoveUntil(
-                        MaterialPageRoute(
-                            builder: (context) => dashboardScreen()),
-                        (route) => false);
+                    if (email.text != "" && password.text != "") {
+                      if (email.text == "user" && password.text == "user") {
+                        type = "users";
+                      } else if (email.text == "hospital" &&
+                          password.text == "hospital") {
+                        type = "hospital";
+                      }
+                      Navigator.of(context).pushAndRemoveUntil(
+                          MaterialPageRoute(
+                              builder: (context) => dashboardScreen(type)),
+                          (route) => false);
+                    }
                   },
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50),

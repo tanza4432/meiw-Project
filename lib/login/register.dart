@@ -87,9 +87,9 @@ class _RegisterState extends State<Register> {
                         ),
                       );
                     }).toList(),
-                    onChanged: (String? newValue) {
+                    onChanged: (String newValue) {
                       setState(() {
-                        defaultValue = newValue!;
+                        defaultValue = newValue;
                       });
                     },
                   ),
