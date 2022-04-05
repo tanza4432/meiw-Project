@@ -57,7 +57,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
                   .map((key, value) => MapEntry(
                         key,
                         BottomNavigationBarItem(
-                          // title: Text(''),
+                          label: '',
                           icon: Container(
                             padding: const EdgeInsets.symmetric(
                               vertical: 6.0,
@@ -94,7 +94,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
                   .map((key, value) => MapEntry(
                         key,
                         BottomNavigationBarItem(
-                          // title: Text(''),
+                          label: '',
                           icon: Container(
                             padding: const EdgeInsets.symmetric(
                               vertical: 6.0,
