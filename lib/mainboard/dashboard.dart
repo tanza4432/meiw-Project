@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hospitel/Theme/theme.dart';
+import 'package:hospitel/mainboard/screen/HeartRate.dart';
 import 'package:hospitel/mainboard/screen/home_screen.dart';
 import 'package:hospitel/mainboard/screen/location.dart';
 import 'package:hospitel/mainboard/screen/patient_Information.dart';
@@ -18,6 +19,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
   String type;
   final List _screensHospital = [
     HomeScreen(),
+    HeartRate(),
     Location(),
     patient_Information(),
     patient_notification(),
@@ -26,6 +28,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
 
   final List _screensUsers = [
     HomeScreen(),
+    HeartRate(),
     Location(),
     ProfilePage(),
   ];
@@ -48,6 +51,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
               elevation: 0.0,
               items: [
                 Icons.home,
+                Icons.broken_image_outlined,
                 Icons.map,
                 Icons.event_note,
                 Icons.info,
@@ -89,7 +93,12 @@ class _dashboardScreenState extends State<dashboardScreen> {
               selectedItemColor: Colors.white,
               unselectedItemColor: Colors.grey,
               elevation: 0.0,
-              items: [Icons.home, Icons.map, Icons.account_box]
+              items: [
+                Icons.home,
+                Icons.broken_image_outlined,
+                Icons.map,
+                Icons.account_box
+              ]
                   .asMap()
                   .map((key, value) => MapEntry(
                         key,

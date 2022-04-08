@@ -67,19 +67,6 @@ class patient extends StatelessWidget {
             child: TextFormField(
               // controller: username,
               style: TextStyle(color: Colors.black),
-              decoration:
-                  ThemeHelper().textInputDecoration("โรงพยาบาลใกล้เคียง"),
-            ),
-          ),
-        ),
-        SizedBox(height: size.height * 0.02),
-        Container(
-          alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(horizontal: 40),
-          child: Form(
-            child: TextFormField(
-              // controller: username,
-              style: TextStyle(color: Colors.black),
               decoration: ThemeHelper().textInputDecoration("อีเมล์"),
             ),
           ),

@@ -13,7 +13,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   String defaultValue = 'กรุณาเลือกประเภท';
 
-  var type = ['กรุณาเลือกประเภท', 'ผู้ป่วย', 'ญาติ', 'โรงพยาบาล'];
+  var type = ['กรุณาเลือกประเภท', 'ผู้ป่วย', 'ญาติ'];
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +97,6 @@ class _RegisterState extends State<Register> {
               ),
               defaultValue == "ผู้ป่วย" ? patient() : Container(),
               defaultValue == "ญาติ" ? relative() : Container(),
-              defaultValue == "โรงพยาบาล" ? hospital() : Container(),
             ],
           ),
         ),

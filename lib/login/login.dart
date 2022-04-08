@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hospitel/Theme/theme.dart';
 import 'package:hospitel/component/ThemeHelper.dart';
+import 'package:hospitel/controllers/LoginController.dart';
 import 'package:hospitel/login/forgotPassword.dart';
 import 'package:hospitel/login/register.dart';
 import 'package:hospitel/login/typeRegister/hospital.dart';
@@ -135,6 +136,7 @@ class _loginState extends State<login> {
                           password.text == "hospital") {
                         type = "hospital";
                       }
+                      // LoginController();
                       Navigator.of(context).pushAndRemoveUntil(
                           MaterialPageRoute(
                               builder: (context) => dashboardScreen(type)),
