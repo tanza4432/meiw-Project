@@ -14,7 +14,26 @@ class _notificationState extends State<notification> {
         "แจ้งเตือน",
         style: TextStyle(fontFamily: 'Opun'),
       )),
-      body: Container(),
+      body: Card(
+        child: (Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            const ListTile(
+              leading: Icon(Icons.album),
+              title: Text(
+                'แจ้งเตือน',
+                style: TextStyle(fontFamily: 'Opun'),
+              ),
+              subtitle: Text(
+                'หัวใจเต้นผิดปกติ! ผู้ป่วยสามารถ ค้นหา โรงพยาบาลไกล้เคียงได้ทันที',
+                style: TextStyle(
+                  fontFamily: 'Opun',
+                ),
+              ),
+            ),
+          ],
+        )),
+      ),
     );
   }
 }
