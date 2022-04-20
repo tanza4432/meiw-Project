@@ -309,8 +309,8 @@ class _HeartRateState extends State<HeartRate> {
           ],
         ),
         Container(
-          width: 200,
-          height: 200,
+          width: 220,
+          height: 220,
           padding: EdgeInsets.all(20),
           alignment: Alignment.center,
           decoration: BoxDecoration(
@@ -322,6 +322,13 @@ class _HeartRateState extends State<HeartRate> {
               Text(
                 "$start",
                 style: TextStyle(fontSize: 50),
+              ),
+              Text(
+                "อัตราการเต้นของหัวใจ",
+                style: TextStyle(
+                  fontSize: 12,
+                  fontFamily: 'Opun',
+                ),
               ),
               Image.asset(
                 'assets/images/pulse.gif',
