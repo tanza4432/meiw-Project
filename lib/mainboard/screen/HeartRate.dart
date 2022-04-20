@@ -228,7 +228,7 @@ class _HeartRateState extends State<HeartRate> {
   var rng = Random();
   var number = 0;
   Timer timer;
-  int start = 73;
+  int start = 0;
 
   @override
   void initState() {

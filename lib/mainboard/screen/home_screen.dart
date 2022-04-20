@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
+    final Size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: CustomAppBar(),
       body: Center(
@@ -50,8 +50,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 20),
             Container(
-              width: 500,
-              height: 420,
+              width: Size.width * 1,
+              height: Size.height * 0.5,
               child: Image.asset(
                 'assets/images/news.jpg',
               ),
