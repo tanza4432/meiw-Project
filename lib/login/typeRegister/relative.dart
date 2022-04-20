@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hospitel/component/ThemeHelper.dart';
 
 class relative extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -116,18 +115,6 @@ class relative extends StatelessWidget {
               // controller: username,
               style: TextStyle(color: Colors.black),
               decoration: ThemeHelper().textInputDecoration("ชื่อ - สกุล"),
-            ),
-          ),
-        ),
-        SizedBox(height: size.height * 0.02),
-        Container(
-          alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(horizontal: 40),
-          child: Form(
-            child: TextFormField(
-              // controller: username,
-              style: TextStyle(color: Colors.black),
-              decoration: ThemeHelper().textInputDecoration("ที่อยู่"),
             ),
           ),
         ),
