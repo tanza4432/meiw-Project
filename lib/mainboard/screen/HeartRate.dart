@@ -317,9 +317,18 @@ class _HeartRateState extends State<HeartRate> {
               color: Colors.transparent,
               shape: BoxShape.circle,
               border: Border.all(width: 3.0, color: Colors.green[300])),
-          child: Text(
-            "$start",
-            style: TextStyle(fontSize: 50),
+          child: Column(
+            children: [
+              Text(
+                "$start",
+                style: TextStyle(fontSize: 50),
+              ),
+              Image.asset(
+                'assets/images/pulse.gif',
+                scale: 2.5,
+                fit: BoxFit.cover,
+              )
+            ],
           ),
         ),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
