@@ -9,18 +9,6 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
       title: Text('Alarm System'),
       backgroundColor: ColorBackground,
       elevation: 0.0,
-      actions: <Widget>[
-        IconButton(
-          icon: const Icon(Icons.notifications_none),
-          iconSize: 28.0,
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (BuildContext context) => notification()));
-          },
-        ),
-      ],
     );
   }
 

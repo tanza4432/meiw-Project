@@ -58,10 +58,10 @@ class MapScreenState extends State<ProfilePage>
                         Text(
                           "ข้อมูลส่วนตัว",
                           style: TextStyle(
-                            fontSize: 22,
-                            color: ColorBackground,
-                            fontWeight: FontWeight.bold,
-                          ),
+                              fontSize: 22,
+                              color: ColorBackground,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Opun'),
                         ),
                         IconButton(
                           iconSize: 35,
@@ -109,6 +109,7 @@ class MapScreenState extends State<ProfilePage>
                                             style: TextStyle(
                                                 fontSize: 18.0,
                                                 color: ColorBackground,
+                                                fontFamily: 'Opun',
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -141,6 +142,7 @@ class MapScreenState extends State<ProfilePage>
                                             style: TextStyle(
                                                 fontSize: 16.0,
                                                 color: ColorBackground,
+                                                fontFamily: 'Opun',
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -185,10 +187,11 @@ class MapScreenState extends State<ProfilePage>
                                         mainAxisSize: MainAxisSize.min,
                                         children: <Widget>[
                                           new Text(
-                                            'อีเมล์',
+                                            'อีเมล',
                                             style: TextStyle(
                                                 fontSize: 16.0,
                                                 color: ColorBackground,
+                                                fontFamily: 'Opun',
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -216,48 +219,49 @@ class MapScreenState extends State<ProfilePage>
                                       })),
                                     ],
                                   )),
-                              Padding(
-                                  padding: EdgeInsets.only(
-                                      left: 25.0, right: 25.0, top: 25.0),
-                                  child: new Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: <Widget>[
-                                      new Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: <Widget>[
-                                          new Text(
-                                            'เบอร์โทรศัพท์',
-                                            style: TextStyle(
-                                                fontSize: 16.0,
-                                                color: ColorBackground,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  )),
-                              Padding(
-                                  padding: EdgeInsets.only(
-                                      left: 25.0, right: 25.0, top: 2.0),
-                                  child: new Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: <Widget>[
-                                      new Flexible(child:
-                                          FutureBuilder<TextEditingController>(
-                                              // future: datatel(token),
-                                              builder: (context, snapshot) {
-                                        tel = snapshot.data;
-                                        return new TextField(
-                                          controller: tel,
-                                          decoration: const InputDecoration(
-                                              hintText: "ใส่เบอร์โทรศัพท์"),
-                                          enabled: !_status,
-                                        );
-                                      })),
-                                    ],
-                                  )),
+                              // Padding(
+                              //     padding: EdgeInsets.only(
+                              //         left: 25.0, right: 25.0, top: 25.0),
+                              //     child: new Row(
+                              //       mainAxisSize: MainAxisSize.max,
+                              //       children: <Widget>[
+                              //         new Column(
+                              //           mainAxisAlignment:
+                              //               MainAxisAlignment.start,
+                              //           mainAxisSize: MainAxisSize.min,
+                              //           children: <Widget>[
+                              //             new Text(
+                              //               'เบอร์โทรศัพท์',
+                              //               style: TextStyle(
+                              //                   fontSize: 16.0,
+                              //                   color: ColorBackground,
+                              //                   fontFamily: 'Opun',
+                              //                   fontWeight: FontWeight.bold),
+                              //             ),
+                              //           ],
+                              //         ),
+                              //       ],
+                              //     )),
+                              // Padding(
+                              //     padding: EdgeInsets.only(
+                              //         left: 25.0, right: 25.0, top: 2.0),
+                              //     child: new Row(
+                              //       mainAxisSize: MainAxisSize.max,
+                              //       children: <Widget>[
+                              //         new Flexible(child:
+                              //             FutureBuilder<TextEditingController>(
+                              //                 // future: datatel(token),
+                              //                 builder: (context, snapshot) {
+                              //           tel = snapshot.data;
+                              //           return new TextField(
+                              //             controller: tel,
+                              //             decoration: const InputDecoration(
+                              //                 hintText: "ใส่เบอร์โทรศัพท์"),
+                              //             enabled: !_status,
+                              //           );
+                              //         })),
+                              //       ],
+                              //     )),
                               Padding(
                                   padding: EdgeInsets.only(
                                       left: 25.0, right: 25.0, top: 25.0),
@@ -274,6 +278,7 @@ class MapScreenState extends State<ProfilePage>
                                             style: TextStyle(
                                                 fontSize: 16.0,
                                                 color: ColorBackground,
+                                                fontFamily: 'Opun',
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -313,6 +318,7 @@ class MapScreenState extends State<ProfilePage>
                                             style: TextStyle(
                                                 fontSize: 16.0,
                                                 color: ColorBackground,
+                                                fontFamily: 'Opun',
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ],
@@ -378,7 +384,12 @@ class MapScreenState extends State<ProfilePage>
               padding: EdgeInsets.only(right: 10.0),
               child: Container(
                   child: new RaisedButton(
-                child: new Text("บันทึก"),
+                child: new Text(
+                  "บันทึก",
+                  style: TextStyle(
+                    fontFamily: 'Opun',
+                  ),
+                ),
                 textColor: Colors.white,
                 color: Color(0xFF33CC33),
                 onPressed: () async {
@@ -451,7 +462,10 @@ class MapScreenState extends State<ProfilePage>
               padding: EdgeInsets.only(left: 10.0),
               child: Container(
                   child: new RaisedButton(
-                child: new Text("ยกเลิก"),
+                child: new Text("ยกเลิก",
+                    style: TextStyle(
+                      fontFamily: 'Opun',
+                    )),
                 textColor: Colors.white,
                 color: Colors.red[600],
                 onPressed: () {

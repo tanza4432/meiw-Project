@@ -58,7 +58,7 @@ class _forgotPasswordState extends State<forgotPassword> {
                   child: TextFormField(
                     // controller: username,
                     style: TextStyle(color: Colors.black),
-                    decoration: ThemeHelper().textInputDecoration("กรอกอีเมล์"),
+                    decoration: ThemeHelper().textInputDecoration("กรอกอีเมล"),
                   ),
                 ),
               ),

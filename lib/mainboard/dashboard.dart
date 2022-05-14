@@ -19,7 +19,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
   String type;
   final List _screensHospital = [
     HomeScreen(),
-    HeartRate(),
+    // HeartRate(),
     Location(),
     patient_Information(),
     patient_notification(),
@@ -28,7 +28,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
 
   final List _screensUsers = [
     HomeScreen(),
-    HeartRate(),
+    // HeartRate(),
     Location(),
     ProfilePage(),
   ];
@@ -51,7 +51,6 @@ class _dashboardScreenState extends State<dashboardScreen> {
               elevation: 0.0,
               items: [
                 Icons.home,
-                Icons.broken_image_outlined,
                 Icons.map,
                 Icons.event_note,
                 Icons.info,
@@ -93,12 +92,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
               selectedItemColor: Colors.white,
               unselectedItemColor: Colors.grey,
               elevation: 0.0,
-              items: [
-                Icons.home,
-                Icons.broken_image_outlined,
-                Icons.map,
-                Icons.account_box
-              ]
+              items: [Icons.home, Icons.map, Icons.account_box]
                   .asMap()
                   .map((key, value) => MapEntry(
                         key,

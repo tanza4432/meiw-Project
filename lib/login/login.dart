@@ -52,7 +52,7 @@ class _loginState extends State<login> {
                   child: TextFormField(
                     controller: email,
                     style: TextStyle(color: Colors.black),
-                    decoration: ThemeHelper().textInputDecoration("อีเมล์"),
+                    decoration: ThemeHelper().textInputDecoration("อีเมล"),
                   ),
                 ),
               ),

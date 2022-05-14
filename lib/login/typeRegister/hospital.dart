@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hospitel/component/ThemeHelper.dart';
 
 class hospital extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -65,7 +64,7 @@ class hospital extends StatelessWidget {
             child: TextFormField(
               // controller: username,
               style: TextStyle(color: Colors.black),
-              decoration: ThemeHelper().textInputDecoration("อีเมล์"),
+              decoration: ThemeHelper().textInputDecoration("อีเมล"),
             ),
           ),
         ),

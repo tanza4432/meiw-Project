@@ -65,7 +65,7 @@ class patient extends StatelessWidget {
             child: TextFormField(
               // controller: username,
               style: TextStyle(color: Colors.black),
-              decoration: ThemeHelper().textInputDecoration("อีเมล์"),
+              decoration: ThemeHelper().textInputDecoration("อีเมล"),
             ),
           ),
         ),

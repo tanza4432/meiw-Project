@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 20),
             Container(
               width: Size.width * 1,
-              height: Size.height * 0.5,
+              height: Size.height * 0.45,
               child: Image.asset(
                 'assets/images/news.jpg',
               ),
@@ -83,10 +83,10 @@ class WebLink extends StatelessWidget {
         child: Text(
           name,
           style: TextStyle(
-            fontSize: 25,
-            color: Colors.blue,
-            decoration: TextDecoration.underline,
-          ),
+              fontSize: 15,
+              color: Colors.blue,
+              decoration: TextDecoration.underline,
+              fontFamily: 'Opun'),
         ),
       ),
     );
